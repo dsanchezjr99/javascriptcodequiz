@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Code Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Get Started</h1>
+        <div class="timer"> Timer: <span id="timer"></span></div>
+    </header>
+
+
+    <div class="wrapper">
+        <div id="homepage" class="home">
+            <h2>Quiz</h2>
+            <p> Questions will be under a time limit, If a question is answered wrong the time will <br>
+            be subtracted by 10 seconds. The quicker you answer the question the longer the time you <br>
+        have taking the quiz.</p>
+        <button id="start-button">Begin Quiz</button>
+     </div>
+
+     <div id="questions" class="hidden">
+         <h2 id="question-title"></h2> 
+         <div id="choices" class="choices"></div>
+     </div>
+
+     <div id="finishscreen" class="hidden">
+         <h2>You Are Finished</h2>
+
+         <p> Your Final Score is <span id="final-score"></span></p>
+
+         <p> Please Enter Your Initials <input type="text" id="initial">
+            <button id="submit-button">Submit</button> </p>
+     </div>
+
+     <div class="wrapper-hide">
+         <h2>HighScores</h2>
+         <ol id="highscores"></ol>
+
+        </div>
+    
+        <script src="script.js"></script>
+
+</body>
+</html>
