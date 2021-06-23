@@ -15,39 +15,39 @@ let highscores = document.getElementById("highscores");
 
 let questions = [
         {
-            title: "What is the typeof operator?"
+            title: "What is the typeof operator?",
             choices: ["The Way to Tell how large the font is", "typeof doesn't exist in JavaScript", "I'm not sure", "An Operator that can examine a value and tell you what type it is"],
             answer: "An Operator that can examine a value and tell you what type it is"
+        },
+
+        {
+            title: "Which built-in method calls a function for each element in the array?",
+            choices: ["while", "loop", "forEach", "None of the above"],
+            answer: "forEach()",
+        },
+
+        {
+            title: "Which of the following is an Advantage of using Javascript",
+            choices: ["Less server interaction", "Immediate feedback to the visitors", "increased interactivity", "All of the Above"],
+            answer: "All of the Above"
+        },
+
+        {
+            title: "Which of the following is the correct syntax to print a page using JavaScript",
+            choices: ["window.print()", "browser.print()", "navigator.print()", "document.print()",],
+            answer: "window.print()"
+        },
+
+        {
+            title: "Inside which HTML element do we put the JavaScript?",
+            choices: ["<js>", "<javascript>", "<scripting>", "<script>"],
+            answer: "<script>"
         }
-
-        // {
-        //     title: "What is the typeof operator?"
-        //     choices: ["The Way to Tell how large the font is", "typeof doesn't exist in JavaScript", "I'm not sure", "An Operator that can examine a value and tell you what type it is"],
-        //     answer: "An Operator that can examine a value and tell you what type it is"
-        // }
-
-        // {
-        //     title: "What is the typeof operator?"
-        //     choices: ["The Way to Tell how large the font is", "typeof doesn't exist in JavaScript", "I'm not sure", "An Operator that can examine a value and tell you what type it is"],
-        //     answer: "An Operator that can examine a value and tell you what type it is"
-        // }
-
-        // {
-        //     title: "What is the typeof operator?"
-        //     choices: ["The Way to Tell how large the font is", "typeof doesn't exist in JavaScript", "I'm not sure", "An Operator that can examine a value and tell you what type it is"],
-        //     answer: "An Operator that can examine a value and tell you what type it is"
-        // }
-
-        // {
-        //     title: "What is the typeof operator?"
-        //     choices: ["The Way to Tell how large the font is", "typeof doesn't exist in JavaScript", "I'm not sure", "An Operator that can examine a value and tell you what type it is"],
-        //     answer: "An Operator that can examine a value and tell you what type it is"
-        // }
 ]
 
 let time = questions.length * 20
 
-// Quiz Begins
+// Beginning of the Quiz
 
 function startQuiz() {
     let startScreenEl = document.getElementById("homepage");
@@ -128,7 +128,9 @@ submitButtonEL.onclick = () => {
 
     leaderBoard.push({"user":input,"score":time});
     console.log(leaderBoard);
-    //getScore
+
+    
+    //getting Final Score
 
     let table = ()=> {
         for(let i = 0; i < leaderBoard.length; i++){
